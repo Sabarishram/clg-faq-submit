@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Start */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: lightgrey;
+    border-bottom: 1px solid #dee2e6;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.nasc-logo {
+    height: 60px;
+}
+
+.request {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.request:hover {
+    text-decoration: underline;
+}
+/* Header End */
+
+/* Form Starts */
+.form-cont {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+form > h1 {
+    text-align: center;
+}
+
+form > label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1em;
+}
+
+form > .input{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+form > p{
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+
+form > textarea {
+    resize: none;
+}
+
+form > p {
+    font-size: 13px;
+}
+
+#submit {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 50%;
+    max-width: 200px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: lightgray;
+}
+
+#submit:hover {
+    text-decoration: underline;
+}
+/* Form Ends */
+
+/* Loading starts */
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#loading p {
+    margin: 0;
+}
+/* Loading Ends */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .nasc-logo {
+        height: 50px;
+    }
+
+    .form-cont {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    form > label,
+    form > p {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    form > .input{
+        width: 100%;
+    }
+
+}
